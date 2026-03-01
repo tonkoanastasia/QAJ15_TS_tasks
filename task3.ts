@@ -1,4 +1,4 @@
-// Создайте функцию для подсчета стоимости товаров в корзине. На входе функция принимает массив объектов со свойстами name, price, quantity
+// Создайте функцию для подсчета стоимости товаров в корзине. На входе функция принимает массив объектов со свойстами name, price, quantity//
 
 function purchasePrice(goods: { name: string; price: number; quantity: number }[]): number {
   let totalSum = 0;
