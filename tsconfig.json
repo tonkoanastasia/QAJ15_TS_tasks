@@ -1,17 +1,20 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "./dist",
-    "module": "nodenext",
     "target": "esnext",
-    "types": ["node"],
-    "sourceMap": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "strict": true,
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ESNext", "dom"],
+    "rootDir": "./",
+    "outDir": "./dist"
   },
-  "include": ["*.ts"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "include": ["./**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

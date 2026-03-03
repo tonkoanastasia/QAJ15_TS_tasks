@@ -9,10 +9,10 @@ function createRandomArray(length: number, minNumber: number, maxNumber: number)
 
   return arr;
 }
-function multiplyBiggest3 (arr:number[]): number {
-arr.sort ((value1,value2) =>value2 -value1);
-  return arr[0]*arr[1]*arr[2]
+function multiplyBiggest3(arr: number[]): number {
+  arr.sort((value1, value2) => value2 - value1);
+  return arr[0] * arr[1] * arr[2];
 }
-const array:number[] = createRandomArray(10,5,20);
-console.log (array);
-console.log (multiplyBiggest3(array));
+const array: number[] = createRandomArray(10, 5, 20);
+console.log(array);
+console.log(multiplyBiggest3(array));
