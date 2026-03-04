@@ -4,19 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "tsc",
-  "task1": "npm run build && node dist/task1.js",
-  "task2": "npm run build && node dist/task2.js",
-  "task3": "npm run build && node dist/task3.js",
-  "task4": "npm run build && node dist/task4.js"
-},
-
+    "build": "tsc",
+    "task1": "npm run build && node dist/task1.js",
+    "task2": "npm run build && node dist/task2.js",
+    "task3": "npm run build && node dist/task3.js",
+    "task4": "npm run build && node dist/task4.js",
+    "formatting": " npx prettier --write ."
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
     "@types/node": "^25.3.3",
+    "prettier": "^3.8.1",
     "typescript": "^5.9.3"
   }
 }
