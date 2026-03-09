@@ -9,7 +9,9 @@
     "task2": "npm run build && node dist/task2.js",
     "task3": "npm run build && node dist/task3.js",
     "task4": "npm run build && node dist/task4.js",
-    "formatting": " npx prettier --write ."
+    "formatting": " npx prettier --write .",
+    "task5": "npm run build && node dist/task5.js",
+    "task6": "npm run build && node dist/task6.js"
   },
   "keywords": [],
   "author": "",
