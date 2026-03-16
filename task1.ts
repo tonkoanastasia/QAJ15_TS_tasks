@@ -4,7 +4,7 @@ let diceSides: number[] = [2, 4, 6, 8, 10, 12, 20, 100];
 function addSide(side: number) {
   diceSides.push(side);
 }
-function rollDice(diceSide: number): number {
+export function rollDice(diceSide: number): number {
   if (diceSides.includes(diceSide)) {
     return Math.floor(Math.random() * diceSide) + 1;
   }
