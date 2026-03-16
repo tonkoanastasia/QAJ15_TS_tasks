@@ -5,21 +5,33 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "task1": "npm run build && node dist/task1.js",
-    "task2": "npm run build && node dist/task2.js",
-    "task3": "npm run build && node dist/task3.js",
-    "task4": "npm run build && node dist/task4.js",
-    "formatting": " npx prettier --write .",
-    "task5": "npm run build && node dist/task5.js",
-    "task6": "npm run build && node dist/task6.js"
+    "task1": "tsx src/task1.ts",
+    "task2": "tsx src/task2.ts",
+    "task3": "tsx src/task3.ts",
+    "task4": "tsx src/task4.ts",
+    "formatting": "npx prettier --write .",
+    "task5": "tsx src/task5.ts",
+    "task6": "tsx src/task6.ts",
+    "testmocha": "npx mocha --config .\\Mocha\\Config\\.mocharc",
+    "testjest": "jest --config ./jest.config.cjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@types/chai": "^5.2.3",
+    "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/mochawesome": "^6.2.5",
     "@types/node": "^25.3.3",
+    "chai": "^6.2.2",
+    "jest": "^30.3.0",
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4",
     "prettier": "^3.8.1",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }

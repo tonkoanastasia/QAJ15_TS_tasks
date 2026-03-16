@@ -1,26 +1,18 @@
 //Создайте функцию, которая будет принимать в себя массив значений и возвращать только те, в которых заданное(второй параметр, по умолчанию - 4) количество букв
 
-function filterWordByLength(
-  words: string[],
-  length: number = 4
-): string[] {
-    const result = words.filter((word) => {
-    const isCorrectLength = word.length === length;
-    const onlyLetters = /^[a-zA-Zа-яА-ЯёЁ]+$/.test(word);
+function filterWords(words: string[], sizeword: number = 4): string[] {
+  const regular = /[а-яёa-z]/gi;
 
-    return isCorrectLength && onlyLetters;
-  });
+  const result = words.filter(word => word.match(regular)?.length === sizeword);
 
   if (result.length === 0) {
-    throw new Error(
-      `Не найдено ни одного слова длиной ${length} из букв (Aa-Zz, Аа-Яя)`
-    );
+    throw Error(`Не найдено ни одного слова длиной ${sizeword} букв`);
   }
 
   return result;
 }
 
+const words = ['скрипт', 'дом', 'цветок', 'стол', '1234', '12ww', 'dogs', 'java1', '1stop'];
 
-const words = ['test', 'dog', 'tesing', 'код', 'cats', 'ts'];
-console.log(filterWordByLength(words));      
-console.log(filterWordByLength(words, 3));
+console.log(filterWords(words));
+console.log(filterWords(words, 3));
