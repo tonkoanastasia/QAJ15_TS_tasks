@@ -1,7 +1,0 @@
-[
-  { "id": 1, "username": "Alice", "role": "admin" },
-  { "id": 2, "username": "Mike", "role": "observer" },
-  { "id": 3, "username": "Alex", "role": "admin" },
-  { "id": 4, "username": "Jack", "role": "manager" },
-  { "id": 5, "username": "Eva", "role": "manager" }
-]
