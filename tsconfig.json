@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -15,6 +15,6 @@
     "esm": true,
     "experimentalSpecifierResolution": "node"
   },
-  "include": ["./**/*.ts"],
+  "include": ["*.ts", "Mocha/**/*", "jest/**/*", "jest.config.cjs"],
   "exclude": ["node_modules", "dist"]
 }
